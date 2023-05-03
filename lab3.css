@@ -1,0 +1,234 @@
+/* Загальні стилі */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    }
+    
+    a {
+    text-decoration: none;
+    color: #fff;
+    }
+    
+    ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    /* Стилі для заголовка */
+    
+    header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    }
+    
+    h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    }
+    
+    /* Стилі для навігації */
+    
+    nav {
+    display: inline-block;
+    height: 50px;
+    margin-top: 10px;
+    }
+    
+    nav ul {
+    display: flex;
+    }
+    
+    nav li {
+    margin-right: 20px;
+    }
+    
+    nav a {
+    font-size: 1.2rem;
+    }
+    
+    nav a:hover {
+    color: #999;
+    }
+    
+    /* Стилі для фільтрів */
+    
+    #filters {
+    background-color: #eee;
+    padding: 20px;
+    }
+    
+    #filters h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    }
+    
+    .filter-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #333;
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    }
+    
+    .filter-btn.active {
+    background-color: #333;
+    color: #fff;
+    }
+    
+    /* Стилі для карточок */
+    
+    #cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    }
+    
+    .animated-image {
+        animation-name: rotate-image;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes rotate-image {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      
+
+    .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    /* max-width: 300px; */
+    padding: 20px;
+    text-align: center;
+    }
+    
+    .card img {
+    max-width: 100%;
+    }
+    
+    .card-content {
+    margin-top: 20px;
+    }
+    
+    .card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    }
+    
+    .card p.description {
+    font-size: 1rem;
+    }
+    
+    .card p.discount {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 5px 10px;
+    }
+
+    nav{
+        background-color: #333;
+        width: 100%;
+        color: #fff !important;
+    }
+
+    .quarter{
+        text-align: center;
+        width: 25%;
+        margin-top: -10px;
+    }
+
+    .discount{
+        background-color: black;
+        color: #ccc;
+    }
+    
+    /* Стилі для футера */
+    
+   /* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content/Box */
+.subcribe-cont {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close-sub {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  
+  .close-sub:hover,
+  .close-sub:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }

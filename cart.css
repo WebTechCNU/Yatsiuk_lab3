@@ -1,0 +1,95 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Стилі для заголовку */
+  h1 {
+    text-align: center;
+  }
+  
+  /* Стилі для секцій з кошиком і товарами */
+  div {
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #f2f2f2;
+  }
+  
+  /* Стилі для таблиці з кошиком */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Стилі для кнопки "Очистити кошик" */
+  #clear-cart {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #clear-cart:hover {
+    background-color: #68b9a5;
+  }
+  
+  /* Стилі для списку товарів */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .add-to-cart {
+    background-color: #4c99af;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #008CBA;
+  }
+  
+  /* Стилі для селектора "Сортувати за" */
+  label {
+    margin-right: 10px;
+  }
+  
+  select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  

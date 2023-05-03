@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POPITstock</title>
+    <link rel="stylesheet" href="cart.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <h1>POPITstock</h1>
+
+    <div>
+      <h2>Кошик</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Назва товару</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Тут будуть товари, які користувач додає до кошика -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">
+              <button id="clear-cart">Очистити кошик</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div>
+      <h2>Товари</h2>
+
+      <label for="sort-by">Сортувати за:</label>
+      <select id="sort-by">
+        <option value="name">Назва</option>
+        <option value="price">Ціна</option>
+      </select>
+
+      <ul id="product-list">
+        <!-- Тут будуть список товарів, які можна додати до кошика -->
+        <li>
+          <span class="product-name" id="0">Товар 1</span>
+          <span class="product-price">10 грн</span>
+          <button class="add-to-cart">Додати до кошика</button>
+        </li>
+        <li>
+          <span class="product-name" id="1">Товар 2</span>
+          <span class="product-price">20 грн</span>
+          <button class="add-to-cart">Додати до кошика</button>
+        </li>
+        <li>
+          <span class="product-name" id="2">Товар 3</span>
+          <span class="product-price">30 грн</span>
+          <button class="add-to-cart">Додати до кошика</button>
+        </li>
+      </ul>
+    </div>
+
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+    <script src="shop.js"></script>
+  </body>
+</html>
